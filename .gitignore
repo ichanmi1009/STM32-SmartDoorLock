@@ -1,0 +1,28 @@
+# Build outputs
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+*.map
+*.dmp
+__dump*.txt
+
+# STM32CubeIDE and Eclipse
+.metadata/
+.settings/
+.project
+.cproject
+Debug/
+Release/
+
+# STM32CubeProgrammer
+*.log
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
+*.swp
