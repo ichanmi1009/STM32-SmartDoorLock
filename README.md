@@ -41,17 +41,6 @@ GPIO, EXTI, Timer PWM, I2C, UART를 직접 초기화했으며, 링커 스크립�
 
 PIR Sensor는 EXTI Interrupt로 접근 이벤트를 전달하고, Key Matrix는 TIM4 주기 Flag를 기준으로 스캔합니다. 인증 결과에 따라 TIM5 PWM으로 Servo Motor를 제어하고, TIM3 PWM으로 성공음 또는 실패음을 출력합니다. LCD 상태 표시는 I2C2를 통해 PCF8574 Backpack으로 전달됩니다.
 
-### Pin Map
-
-- Key Matrix Row 1 ~ 4: PA6 ~ PA9, GPIO Output
-- Key Matrix Column 1 ~ 4: PB4 ~ PB7, GPIO Input과 Internal Pull-down
-- PIR Sensor: PD2, EXTI2 Rising Edge
-- Servo Motor: PA0, TIM5 Channel 1 PWM
-- Buzzer: PB0, TIM3 Channel 3 PWM
-- LCD SDA: PB9, I2C2 AF9
-- LCD SCL: PB10, I2C2 AF4
-- Debug UART TX: PA2, USART2 AF7
-- Debug UART RX: PA3, USART2 AF7
 
 ## Key Matrix
 
